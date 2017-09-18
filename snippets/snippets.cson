@@ -1,42 +1,38 @@
 ".html.text.vue":
   "za-loading":
-    "prefix":"zaLoading",
+    "prefix":"zaLoading"
     "body":"""
       <za-loading :visible.sync='${1:visible}'>${2:content}</za-loading>
-    """,
-    "description":""
+    """
 
   "za-toast":
-    "prefix":"zaToast",
+    "prefix":"zaToast"
     "body":"""
       <za-toast
       :visible.sync=''
       @close=''
       :duration=''>
       </za-toast>
-    """,
-    "description":""
+    """
 
   "za-swipe-action":
-    "prefix":"zaSwipeAction",
+    "prefix":"zaSwipeAction"
     "body":"""
       <za-swipe-action :right='${1:right}' :left='${2:left}'>
         <za-cell>${3:content}</za-cell>
       </za-swipe-action>
-    """,
-    "description":""
+    """
 
   "za-pull":
-    "prefix":"zaPull",
+    "prefix":"zaPull"
     "body":"""
      <za-pull :on-refresh='' :refreshing=''>
       <za-cell v-for='i in myData' :key='i'>${3:content}</za-cell>
     </za-pull>
-    """,
-    "description":""
+    """
 
   "za-popup":
-    "prefix":"zaPopup",
+    "prefix":"zaPopup"
     "body":"""
         <za-popup
           :visible.sync=''
@@ -46,27 +42,24 @@
           @close=''>
           <div>${1:content}</div>
         </za-popup>
-    """,
-    "description":""
+    """
 
   "za-modal":
-    "prefix":"zaModal",
+    "prefix":"zaModal"
     "body":"""
         <za-modal :visible.sync='' @close='' title='' :showClose=''>
           ${5:content}
         </za-modal>
-    """,
-    "description":""
+    """
 
   "za-button":
-    "prefix":"zaButton",
+    "prefix":"zaButton"
     "body":"""
       <za-button theme='${1:primary}' size='' shape=''>${3:content}</za-button>
-    """,
-    "description":""
+    """
 
   "za-actionsheet":
-    "prefix":"zaActionsheet",
+    "prefix":"zaActionsheet"
     "body":"""
       <za-actionsheet
         :visible.sync=''
@@ -74,36 +67,35 @@
         :showCancel=''
         @cancel=''>
       </za-actionsheet>
-    """,
-    "description":""
+    """
 
    "za-checkbox":
-     "prefix":"zaCheckbox",
+     "prefix":"zaCheckbox"
      "body":"""
           <za-checkbox v-model='' @change=''>
             ${1:content}
           </za-checkbox>
-      """,
-      "description":""
+      """
+
 
   "za-checkbox-group":
-    "prefix":"zaCheckboxGroup",
+    "prefix":"zaCheckboxGroup"
     "body":"""
         <za-checkbox-group v-model='' @change=''>
           <za-checkbox label=''>${1:content}</za-checkbox>
         </za-checkbox-group>
-     """,
-     "description":""
+     """
+
 
   "za-input":
-    "prefix":"zaInput",
+    "prefix":"zaInput"
     "body":"""
       <za-input v-model='' type="text" placeholder="" ></za-input>
-     """,
-     "description":""
+     """
+
 
   "za-picker":
-    "prefix":"zaPicker",
+    "prefix":"zaPicker"
     "body":"""
       <za-picker
         :visible.sync=''
@@ -112,71 +104,71 @@
         @ok=''
         @cancel=''>
       </za-picker>
-     """,
-     "description":""
+     """
+
 
   "za-radio-group":
-    "prefix":"zaRadioGroup",
+    "prefix":"zaRadioGroup"
     "body":"""
       <za-radio-group v-model=''>
         <za-radio v-for='i in items' :label='' :key=''>${1:item}</za-radio>
       </za-radio-group>
-     """,
-     "description":""
+     """
+
 
   "za-stepper":
-    "prefix":"zaStepper",
+    "prefix":"zaStepper"
     "body":"""
       <za-stepper v-model='' :min='' :max='' :step='' ></za-stepper>
-     """,
-     "description":""
+     """
+
 
   "za-switch":
-    "prefix":"zaSwitch",
+    "prefix":"zaSwitch"
     "body":"""
       <za-switch v-model='' @change='' ></za-switch>
-     """,
-     "description":""
+     """
+
 
   "za-uploader":
-    "prefix":"zaUploader",
+    "prefix":"zaUploader"
     "body":"""
       <za-uploader @change='' :before-change='' accept=''>
         ${1:content}
       </za-uploader>
-     """,
-     "description":""
+     """
+
 
   "za-badge":
-    "prefix":"zaBadge",
+    "prefix":"zaBadge"
     "body":"""
       <za-badge text='' shape=''></za-badge>
-     """,
-     "description":""
+     """
+
 
   "za-cell":
-    "prefix":"zaCell",
+    "prefix":"zaCell"
     "body":"""
       <za-cell title='' description=''></za-cell>
-     """,
-     "description":""
+     """
+
 
   "za-icon":
-    "prefix":"zaIcon",
+    "prefix":"zaIcon"
     "body":"""
       <za-icon type='' theme=''></za-icon>
-     """,
-     "description":""
+     """
+
 
   "za-message":
-    "prefix":"zaMessage",
+    "prefix":"zaMessage"
     "body":"""
       <za-message :visible.sync='' icon='' theme=''></za-message>
-     """,
-     "description":""
+     """
+
 
   "za-panel":
-    "prefix":"zaPanel",
+    "prefix":"zaPanel"
     "body":"""
       <za-panel>
         <za-panel-header title='' ></za-panel-header>
@@ -184,43 +176,42 @@
           ${1:content}
         </za-panel-body>
       </za-panel>
-    """,
-    "description":""
+    """
 
   "za-notice-bar":
-    "prefix":"zaNoticeBar",
+    "prefix":"zaNoticeBar"
     "body":"""
       <za-notice-bar :visible.sync='' theme=''></za-notice-bar>
-     """,
-     "description":""
+     """
+
 
   "za-progress":
-    "prefix":"zaProgress",
+    "prefix":"zaProgress"
     "body":"""
       <za-progress :percent='' theme=''></za-progress>
-     """,
-     "description":""
+     """
+
 
   "za-spinner":
-    "prefix":"zaSpinner",
+    "prefix":"zaSpinner"
     "body":"""
       <za-spinner size='' theme=''></za-spinner>
-     """,
-     "description":""
+     """
+
 
   "za-swipe":
-    "prefix":"zaSwipe",
+    "prefix":"zaSwipe"
     "body":"""
       <za-swipe :height='' direction=''>
         <za-swipe-item>
         <div>${1:content}</div>
       </za-swipe-item>
       </za-swipe>
-     """,
-     "description":""
+     """
+
 
   "za-tabs":
-    "prefix":"zaTabs",
+    "prefix":"zaTabs"
     "body":"""
       <za-tabs v-model='' @change=''>
         <za-tab-pane label='' name=''>
@@ -230,19 +221,19 @@
           <div>${2:content}</div>
         </za-tab-pane>
       </za-tabs>
-     """,
-     "description":""
+     """
+
 
 ".meta.tag":
   "v-za-loading":
-    "prefix":"v-za-loading",
+    "prefix":"v-za-loading"
     'body': 'v-za-loading=\"${1:condition}\"'
 
 ".source.js":
     "zaToast":
-      "prefix": "zaToast",
+      "prefix": "zaToast"
       "body": """
-      this.$zaToast('${1:text}',{
+      this.$zaToast('${1:text}'{
         duration: '${2:duration}'
       });
       """
