@@ -4,7 +4,7 @@
 
 1 - Enter `Atom` -> `Preferences`
 
-2 - Enter `Packages` and search Element-Helper package
+2 - Enter `Packages` and search zarm-vue-helper package
 
 3 - Enter `Setting`
 
