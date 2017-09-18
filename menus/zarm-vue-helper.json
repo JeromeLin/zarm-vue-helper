@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle zarm-vue-helper",
+        "command": "zarm-vue-helper:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "zarm-vue-helper",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "zarm-vue-helper:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
