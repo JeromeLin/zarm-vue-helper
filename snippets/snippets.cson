@@ -32,7 +32,8 @@
      <za-pull :on-refresh='' :refreshing=''>
       <za-cell v-for='i in myData' :key='i'>${1:content}</za-cell>
     </za-pull>
-    """
+    """,
+    "description":""
 
   "za-popup":
     "prefix":"zaPopup":
@@ -45,7 +46,8 @@
           @close=''>
           <div>${1:content}</div>
         </za-popup>
-    """
+    """,
+    "description":""
 
   "za-modal":
     "prefix":"zaModal":
@@ -53,13 +55,15 @@
         <za-modal :visible.sync='' @close='' title='' :showClose=''>
           ${1:content}
         </za-modal>
-    """
+    """,
+    "description":""
 
   "za-button":
     "prefix":"zaButton",
     "body":"""
       <za-button theme='' size='' shape=''>${1:conent}</za-button>
-    """
+    """,
+    "description":""
 
   "za-actionsheet":
     "prefix":"zaActionSheet",
@@ -70,33 +74,8 @@
         :showCancel=''
         @cancel=''>
       </za-actionsheet>
-    """
-  # "za-":
-  #   "prefix":"za",
-  #   "body":"""
-  # 
-  #   """
-  # "za-":
-  #   "prefix":"za",
-  #   "body":"""
-  #
-  #   """
-  # "za-":
-  #   "prefix":"za",
-  #   "body":"""
-  #
-  #   """
-  # "za-":
-  #   "prefix":"za",
-  #   "body":"""
-  #
-  #   """
-  # "za-":
-  #   "prefix":"za",
-  #   "body":"""
-  #
-  #   """
-
+    """,
+    "description":""
 
 ".meta.tag":
   "v-za-loading":
