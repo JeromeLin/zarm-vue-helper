@@ -119,7 +119,7 @@
     "prefix":"zaRadioGroup",
     "body":"""
       <za-radio-group v-model=''>
-        <za-radio v-for='(item,i) in items' :label='' :key=''>${1:item}</za-radio>
+        <za-radio v-for='i in items' :label='' :key=''>${1:item}</za-radio>
       </za-radio-group>
      """,
      "description":""
