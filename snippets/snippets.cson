@@ -1,0 +1,24 @@
+".html.text.vue":
+  "za-toast":
+    "prefix":"zaToast",
+    "body":"";
+    "description":""
+
+  "za-toast":
+    "prefix":"zaToast",
+    "body":"",
+    "description":""
+
+".meta.tag":
+  "v-za-loading":
+    "prefix":"v-za-loading",
+    'body': 'v-za-loading=\"${1:condition}\"'
+
+".source.js":
+    "zaToast":
+      "prefix": "zaToast",
+      "body": """
+      this.$zaToast('${1:text}',{
+        duration: '${2:duration}'
+      });
+      """
