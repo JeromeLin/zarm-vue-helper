@@ -1,13 +1,102 @@
 ".html.text.vue":
-  "za-toast":
-    "prefix":"zaToast",
-    "body":"";
+  "za-loading":
+    "prefix":"zaLoading",
+    "body":"""
+      <za-loading :visible.sync=''>${1:content}</za-loading>
+    """,
     "description":""
 
   "za-toast":
     "prefix":"zaToast",
-    "body":"",
+    "body":"""
+      <za-toast
+      :visible.sync=''
+      @close=''
+      :duration=''>
+      </za-toast>
+    """,
     "description":""
+
+  "za-swipe-action":
+    "prefix":"zaSwipeAction",
+    "body":"""
+      <za-swipe-action :right='' :left=''>
+        <za-cell>${1:content}</za-cell>
+      </za-swipe-action>
+    """,
+    "description":""
+
+  "za-pull":
+    "prefix":"zaPull",
+    "body":"""
+     <za-pull :on-refresh='' :refreshing=''>
+      <za-cell v-for='i in myData' :key='i'>${1:content}</za-cell>
+    </za-pull>
+    """
+
+  "za-popup":
+    "prefix":"zaPopup":
+    "body":"""
+        <za-popup
+          :visible.sync=''
+          direction=''
+          :duration=''
+          maskType=''
+          @close=''>
+          <div>${1:content}</div>
+        </za-popup>
+    """
+
+  "za-modal":
+    "prefix":"zaModal":
+    "body":"""
+        <za-modal :visible.sync='' @close='' title='' :showClose=''>
+          ${1:content}
+        </za-modal>
+    """
+
+  "za-button":
+    "prefix":"zaButton",
+    "body":"""
+      <za-button theme='' size='' shape=''>${1:conent}</za-button>
+    """
+
+  "za-actionsheet":
+    "prefix":"zaActionSheet",
+    "body":"""
+      <za-actionsheet
+        :visible.sync=''
+        :actions=''
+        :showCancel=''
+        @cancel=''>
+      </za-actionsheet>
+    """
+  # "za-":
+  #   "prefix":"za",
+  #   "body":"""
+  # 
+  #   """
+  # "za-":
+  #   "prefix":"za",
+  #   "body":"""
+  #
+  #   """
+  # "za-":
+  #   "prefix":"za",
+  #   "body":"""
+  #
+  #   """
+  # "za-":
+  #   "prefix":"za",
+  #   "body":"""
+  #
+  #   """
+  # "za-":
+  #   "prefix":"za",
+  #   "body":"""
+  #
+  #   """
+
 
 ".meta.tag":
   "v-za-loading":
