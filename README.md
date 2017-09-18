@@ -1,9 +1,14 @@
-# zarm-vue-helper package
-
+# zarm-vue-helper package for AtomEditor
 
 ## how to use helper
 
-apm install zarm-vue-helper
+1 - Enter `Atom` -> `Preferences`
+
+2 - Enter `Packages` and search Element-Helper package
+
+3 - Enter `Setting`
+
+4 - Switch version and language
 
 
 ## example

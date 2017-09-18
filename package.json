@@ -1,13 +1,13 @@
 {
   "name": "zarm-vue-helper",
   "main": "./lib/zarm-vue-helper",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "zarm-vue-helper:toggle"
   },
-  "repository": "https://github.com/chuanshuoye/zarm-vue-helper",
+  "repository": "https://github.com/ZhonganTechENG/zarm-vue-helper",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
