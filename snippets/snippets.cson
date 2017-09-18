@@ -2,7 +2,7 @@
   "za-loading":
     "prefix":"zaLoading",
     "body":"""
-      <za-loading :visible.sync=''>${1:content}</za-loading>
+      <za-loading :visible.sync='${1:visible}'>${2:content}</za-loading>
     """,
     "description":""
 
@@ -10,9 +10,9 @@
     "prefix":"zaToast",
     "body":"""
       <za-toast
-      :visible.sync=''
-      @close=''
-      :duration=''>
+      :visible.sync='${1:visible}'
+      @close='${2:function}'
+      :duration='${3:duration}'>
       </za-toast>
     """,
     "description":""
@@ -20,8 +20,8 @@
   "za-swipe-action":
     "prefix":"zaSwipeAction",
     "body":"""
-      <za-swipe-action :right='' :left=''>
-        <za-cell>${1:content}</za-cell>
+      <za-swipe-action :right='${1:right}' :left='${2:left}'>
+        <za-cell>${3:content}</za-cell>
       </za-swipe-action>
     """,
     "description":""
@@ -29,31 +29,31 @@
   "za-pull":
     "prefix":"zaPull",
     "body":"""
-     <za-pull :on-refresh='' :refreshing=''>
-      <za-cell v-for='i in myData' :key='i'>${1:content}</za-cell>
+     <za-pull :on-refresh='${1:refresh}' :refreshing='${2:refreshing}'>
+      <za-cell v-for='i in myData' :key='i'>${3:content}</za-cell>
     </za-pull>
     """,
     "description":""
 
   "za-popup":
-    "prefix":"zaPopup":
+    "prefix":"zaPopup",
     "body":"""
         <za-popup
-          :visible.sync=''
-          direction=''
-          :duration=''
-          maskType=''
-          @close=''>
+          :visible.sync='${1:visible}'
+          direction='${2:direction}'
+          :duration='${3:duration}'
+          maskType='${4:maskType}'
+          @close='${5:function}'>
           <div>${1:content}</div>
         </za-popup>
     """,
     "description":""
 
   "za-modal":
-    "prefix":"zaModal":
+    "prefix":"zaModal",
     "body":"""
-        <za-modal :visible.sync='' @close='' title='' :showClose=''>
-          ${1:content}
+        <za-modal :visible.sync='${1:visible}' @close='${2:function}' title='${3:title}' :showClose='${4:function}'>
+          ${5:content}
         </za-modal>
     """,
     "description":""
@@ -61,7 +61,7 @@
   "za-button":
     "prefix":"zaButton",
     "body":"""
-      <za-button theme='' size='' shape=''>${1:conent}</za-button>
+      <za-button theme='${1:primary}' size='${2:size}' shape='${3:shape}'>${3:conent}</za-button>
     """,
     "description":""
 
@@ -69,10 +69,10 @@
     "prefix":"zaActionSheet",
     "body":"""
       <za-actionsheet
-        :visible.sync=''
-        :actions=''
-        :showCancel=''
-        @cancel=''>
+        :visible.sync='${1:visible}'
+        :actions='${2:function}'
+        :showCancel='${3:showCancel}'
+        @cancel='${4:function}'>
       </za-actionsheet>
     """,
     "description":""
