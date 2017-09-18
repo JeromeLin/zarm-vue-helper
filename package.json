@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "zarm-vue-helper:toggle"
   },
-  "repository": "https://github.com/chuanshuoye/zarm-vue-helper",
+  "repository": "https://github.com/ZhonganTechENG/zarm-vue-helper",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
