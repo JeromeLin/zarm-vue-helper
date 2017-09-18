@@ -77,6 +77,147 @@
     """,
     "description":""
 
+   "za-checkbox":
+     "prefix":"zaCheckbox",
+     "body":"""
+          <za-checkbox v-model='' @change=''>
+            ${1:content}
+          </za-checkbox>
+      """,
+      "description":""
+
+  "za-checkbox-group":
+    "prefix":"zaCheckboxGroup",
+    "body":"""
+        <za-checkbox-group v-model='' @change=''>
+          <za-checkbox label=''>${1:content}</za-checkbox>
+        </za-checkbox-group>
+     """,
+     "description":""
+  "za-input":
+    "prefix":"zaInput",
+    "body":"""
+      <za-input v-model='' type="text" placeholder="${1:placeholder}" ></za-input>
+     """,
+     "description":""
+  "za-picker":
+    "prefix":"zaPicker",
+    "body":"""
+      <za-picker
+        :visible.sync=''
+        v-model=''
+        :dataSource=''
+        @ok=''
+        @cancel=''
+        >
+      </za-picker>
+     """,
+     "description":""
+  "za-radio-group":
+    "prefix":"zaRadioGroup",
+    "body":"""
+      <za-radio-group v-model=''>
+        <za-radio v-for='${1:items}' :label='' :key=''>${1:item}</za-radio>
+      </za-radio-group>
+     """,
+     "description":""
+  "za-stepper":
+    "prefix":"zaStepper",
+    "body":"""
+      <za-stepper v-model='' :min='' :max='' :step='' ></za-stepper>
+     """,
+     "description":""
+  "za-switch":
+    "prefix":"zaSwitch",
+    "body":"""
+      <za-switch v-model='' @change='' ></za-switch>
+     """,
+     "description":""
+  "za-uploader":
+    "prefix":"zaUploader",
+    "body":"""
+      <za-uploader @change='' :before-change='' accept=''>
+        ${1:content}
+      </za-uploader>
+     """,
+     "description":""
+  "za-badge":
+    "prefix":"zaBadge",
+    "body":"""
+      <za-badge text='' shape=''></za-badge>
+     """,
+     "description":""
+  "za-cell":
+    "prefix":"zaCell",
+    "body":"""
+      <za-cell title='' description=''></za-cell>
+     """,
+     "description":""
+  "za-icon":
+    "prefix":"zaIcon",
+    "body":"""
+      <za-icon type='' theme=''></za-icon>
+     """,
+     "description":""
+  "za-message":
+    "prefix":"zaMessage",
+    "body":"""
+      <za-message :visible.sync='' icon='' theme=''></za-message>
+     """,
+     "description":""
+  "za-panel":
+    "prefix":"zaPanel",
+    "body":"""
+      <za-panel>
+        <za-panel-header title='' />
+        <za-panel-body>
+          <za-cell>${1:content}</za-cell>
+        </za-panel-body>
+      </za-panel>
+    """,
+    "description":""
+  "za-notice-bar":
+    "prefix":"zaNoticeBar",
+    "body":"""
+      <za-notice-bar :visible.sync='' theme=''></za-notice-bar>
+     """,
+     "description":""
+  "za-progress":
+    "prefix":"zaProgress",
+    "body":"""
+      <za-progress :percent='' theme=''></za-progress>
+     """,
+     "description":""
+  "za-spinner":
+    "prefix":"zaSpinner",
+    "body":"""
+      <za-spinner size='' theme=''></za-spinner>
+     """,
+     "description":""
+  "za-swipe":
+    "prefix":"zaSpinner",
+    "body":"""
+      <za-swipe :height='' direction=''>
+        <za-swipe-item>
+        <div>${1:content}</div>
+      </za-swipe-item>
+      </za-swipe>
+     """,
+     "description":""
+  "za-tabs":
+    "prefix":"zaTabs",
+    "body":"""
+      <za-tabs v-model='' @change=''>
+        <za-tab-pane label='' name=''>
+          <div>${1:content}</div>
+        </za-tab-pane>
+        <za-tab-pane label='' name=''>
+          <div>${2:content}</div>
+        </za-tab-pane>
+      </za-tabs>
+     """,
+     "description":""
+
 ".meta.tag":
   "v-za-loading":
     "prefix":"v-za-loading",
